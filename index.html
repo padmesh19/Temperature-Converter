@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="thermostat.png" type="image/x-icon">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="container">
+    <h1 id="heading">Temperature Converter</h1>
+    <div class="input-box">
+      <select name="select1" id="select1" onchange="converttype1()">
+        <option value="celsius" selected>Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <input type="number" id="input1" oninput="converttype1()" />
+    </div>
+      <h1>=</h1>
+    <div class="input-box">
+      <select name="select2" id="select2" onchange="converttype1()">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit" selected>Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <input type="number" id="input2" oninput="converttype2()" />
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
